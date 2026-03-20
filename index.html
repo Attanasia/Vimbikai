@@ -1,58 +1,43 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2575.7">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-  </style>
+<style>
+body { margin: 0; padding: 2rem; text-align: center; background: #f9f7ff; font-family: sans-serif; }
+.container { max-width: 500px; margin: 0 auto; }
+.opening { font-size: 20px; font-weight: 600; color: #5a4a9a; margin-bottom: 1.5rem; }
+.line { font-size: 16px; color: #333; margin: 1rem 0; line-height: 1.6; }
+.yes { font-size: 32px; font-weight: 700; color: #7F77DD; margin: 2rem 0; }
+button { background: white; border: 2px solid #7F77DD; color: #7F77DD; padding: 14px 40px; font-size: 16px; border-radius: 8px; cursor: pointer; margin-top: 2rem; }
+button:hover { background: #EEEDFE; }
+.heart { position: fixed; font-size: 28px; pointer-events: none; animation: float 3s ease-out forwards; }
+@keyframes float { 0% { opacity: 1; transform: translateY(0); } 100% { opacity: 0; transform: translateY(-150px); } }
+</style>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1">&lt;style&gt;</p>
-<p class="p1">body { margin: 0; padding: 2rem; text-align: center; background: #f9f7ff; font-family: sans-serif; }</p>
-<p class="p1">.container { max-width: 500px; margin: 0 auto; }</p>
-<p class="p1">.opening { font-size: 20px; font-weight: 600; color: #5a4a9a; margin-bottom: 1.5rem; }</p>
-<p class="p1">.line { font-size: 16px; color: #333; margin: 1rem 0; line-height: 1.6; }</p>
-<p class="p1">.yes { font-size: 32px; font-weight: 700; color: #7F77DD; margin: 2rem 0; }</p>
-<p class="p1">button { background: white; border: 2px solid #7F77DD; color: #7F77DD; padding: 14px 40px; font-size: 16px; font-weight: 600; border-radius: 8px; cursor: pointer; margin-top: 2rem; }</p>
-<p class="p1">button:hover { background: #EEEDFE; }</p>
-<p class="p1">.heart { position: fixed; font-size: 28px; pointer-events: none; animation: float 3s ease-out forwards; }</p>
-<p class="p1">@keyframes float { 0% { opacity: 1; transform: translateY(0); } 100% { opacity: 0; transform: translateY(-150px); } }</p>
-<p class="p1">&lt;/style&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p1">&lt;div class="container"&gt;</p>
-<p class="p1">&lt;div class="opening"&gt;Oh my gosh, Vimbikai,&lt;/div&gt;</p>
-<p class="p1">&lt;div class="line"&gt;I literally had to put my phone down for a second.&lt;/div&gt;</p>
-<p class="p1">&lt;div class="line"&gt;The way you wrote this had me in tears.&lt;/div&gt;</p>
-<p class="p1">&lt;div class="line"&gt;You turned my random Thursday into such a beautiful moment.&lt;/div&gt;</p>
-<p class="p1">&lt;div class="yes"&gt;So yes. A thousand times yes.&lt;/div&gt;</p>
-<p class="p1">&lt;div class="line"&gt;There is no way else I'd rather be.&lt;/div&gt;</p>
-<p class="p1">&lt;div class="line"&gt;I can't wait to celebrate you.&lt;/div&gt;</p>
-<p class="p1">&lt;button onclick="hearts()"&gt;Click to celebrate&lt;/button&gt;</p>
-<p class="p1">&lt;/div&gt;</p>
-<p class="p1">&lt;script&gt;</p>
-<p class="p1">function hearts() {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>for(let i = 0; i &lt; 8; i++) {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>setTimeout(() =&gt; {</p>
-<p class="p1"><span class="Apple-converted-space">      </span>const h = document.createElement('div');</p>
-<p class="p1"><span class="Apple-converted-space">      </span>h.className = 'heart';</p>
-<p class="p1"><span class="Apple-converted-space">      </span>h.textContent = '💜';</p>
-<p class="p1"><span class="Apple-converted-space">      </span>h.style.left = Math.random() * window.innerWidth + 'px';</p>
-<p class="p1"><span class="Apple-converted-space">      </span>h.style.top = window.innerHeight - 50 + 'px';</p>
-<p class="p1"><span class="Apple-converted-space">      </span>document.body.appendChild(h);</p>
-<p class="p1"><span class="Apple-converted-space">      </span>setTimeout(() =&gt; h.remove(), 3000);</p>
-<p class="p1"><span class="Apple-converted-space">    </span>}, i * 120);</p>
-<p class="p1"><span class="Apple-converted-space">  </span>}</p>
-<p class="p1">}</p>
-<p class="p1">&lt;/script&gt;</p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+<div class="container">
+<div class="opening">Oh my gosh, Vimbikai,</div>
+<div class="line">I literally had to put my phone down for a second.</div>
+<div class="line">The way you wrote this had me in tears.</div>
+<div class="line">You turned my random Thursday into such a beautiful moment.</div>
+<div class="yes">So yes. A thousand times yes.</div>
+<div class="line">There is no way else I'd rather be.</div>
+<div class="line">I can't wait to celebrate you.</div>
+<button onclick="hearts()">Click to celebrate</button>
+</div>
+<script>
+function hearts() {
+  for(let i = 0; i < 8; i++) {
+    setTimeout(() => {
+      const h = document.createElement('div');
+      h.className = 'heart';
+      h.textContent = '💜';
+      h.style.left = Math.random() * window.innerWidth + 'px';
+      h.style.top = window.innerHeight - 50 + 'px';
+      document.body.appendChild(h);
+      setTimeout(() => h.remove(), 3000);
+    }, i * 120);
+  }
+}
+</script>
 </body>
 </html>
